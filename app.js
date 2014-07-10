@@ -55,9 +55,9 @@ for(var i = 0; i < withdraws.length; i++){
 }
 
 //console.log(deposits)
-console.log('Your total deposits were: $' + totalDeposit.toFixed(2));
+console.log('Your total deposits were: $' + chalk.green(totalDeposit.toFixed(2)));
 //console.log(withdraws)
-console.log('Your total withdrawals were: $' + totalWithdraw.toFixed(2));
+console.log('Your total withdrawals were: $' + chalk.red(totalWithdraw.toFixed(2)));
 
 balance = balance + totalDeposit - totalWithdraw;
 
